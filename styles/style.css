@@ -1,0 +1,45 @@
+body {
+  /*manter todo conteudo da página centralisado sem a necessidade de gambiarras*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  text-align: center;
+  font: normal 15pt Arial;
+  color: black;
+
+  background: url("../img/wallpaper.jpg") 50% 50% fixed no-repeat;
+  background-size: 100% 100%;
+
+  animation: fade /* nome */ 1s /* duração */ 0s
+    /* delay ao carregar a página */;
+}
+
+div {
+  padding: 20px;
+}
+
+#section_global {
+  background: rgba(221, 221, 221, 0.932);
+  color: black;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);
+  text-align: center;
+}
+
+#definir {
+  display: inline-block;
+  background: rgb(184, 184, 184);
+  margin: auto;
+  border-radius: 8px;
+}
+
+#defButton:hover {
+  background: rgb(110, 255, 129);
+  color: black;
+}
+#desButton:hover {
+  background: rgb(255, 110, 110);
+}

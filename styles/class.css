@@ -1,0 +1,45 @@
+.in {
+  text-align: center;
+  color: black;
+
+  background: rgb(184, 184, 184);
+  border-radius: 15px;
+
+  padding: 20px;
+  width: 30px;
+}
+
+.actionButtons {
+  background: rgb(184, 184, 184);
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 10px;
+
+  color: black;
+
+  transition: 0.2s;
+}
+.actionButtons:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.459);
+  cursor: pointer;
+}
+
+.inputHours {
+  border: none;
+  border-radius: 8px;
+
+  height: 40px;
+  width: 100px;
+
+  background: rgb(184, 184, 184);
+
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+
+.strong {
+  font-weight: bold;
+}

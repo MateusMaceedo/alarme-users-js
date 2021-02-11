@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="styles/effects.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/class.css">
+    <style>
+        /* NOSCRIPT */
+        .noscript {
+            display: none;
+        }
+    </style>
+
+    <script src="functions/small_functions.js"></script>
+
+    <title>Relógio Digital</title>
+</head>
+<body onload="clock()">
+    <section id="section_global">
+        <noscript style="border: 1px red solid;" class="noscript">
+            This page needs to run JavaScript.
+        </noscript>
+        
+        <section class="noscript">
+            
+            <div>
+                <h1>RELÓGIO DIGITAL</h1>
+            </div>
+            
+            <div>
+                <spam type="text" id="relogio_h" class="in" ></spam> <spam class="strong">:</spam>
+                <spam type="text" id="relogio_m" class="in" ></spam> <spam class="strong">:</spam>
+                <spam type="text" id="relogio_s" class="in" ></spam>
+            </div>
+    
+            <div>
+                    <h1>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</h1>
+                    
+                    <input type="number" name="definir_h" id="inH" class="inputHours">
+                    <spam class="strong">:</spam>
+                    <input type="number" name="definir_m" id="inM" class="inputHours">   
+            </div>
+            
+            <section id="definir">
+                <input type="button" value="Definir" class="actionButtons" id="defButton" onclick="defin()">
+                <input type="button" value="Desativar" class="actionButtons" id="desButton" onclick="desativar()">
+            </section>
+            
+            <div id="res"></div>
+            
+            <audio id="ativar" src="audio/ativado.mp3">
+            <audio id="desativar" src="audio/desativar.mp3">
+        </section>
+    </section>
+
+    <script src="functions/clock.js"></script>
+    <script src="functions/alarm.js"></script>
+
+</body>
+</html>
